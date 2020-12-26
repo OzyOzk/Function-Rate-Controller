@@ -1,9 +1,9 @@
 # Function-Rate-Controller
-A neat way to throttle the rate of execution of functions
+A neat way to throttle the rate of execution of functions on Arduinos
 
 ## Example use
 
-```
+```cpp
 #include "RateController.h"
 
 void printNumber(uint32_t n){
