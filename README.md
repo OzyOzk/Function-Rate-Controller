@@ -57,6 +57,4 @@ void loop() {
     Serial.println(number);
   }
 }
-
-
 ```
