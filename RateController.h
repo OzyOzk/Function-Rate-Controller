@@ -21,6 +21,9 @@ public:
         _tp = millis();
         return _function(args...);  
       }
+      else{
+        return NULL;
+      }
     }
 
 };
