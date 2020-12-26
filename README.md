@@ -28,10 +28,14 @@ void loop() {
 
 ## Example use for function with non-void return type
 
-```
+```cpp
 #include "RateController.h"
 
-uint32_t printNumber(uint32_t n);
+uint32_t printNumber(uint32_t n){
+  Serial.print("Number entered: ");
+  Serial.println(n);
+  return n;
+}
 
 /* 
  *  Create and return an object that throttles the printNumber
@@ -54,9 +58,5 @@ void loop() {
   }
 }
 
-uint32_t printNumber(uint32_t n){
-  Serial.print("Number entered: ");
-  Serial.println(n);
-  return n;
-}
+
 ```
